@@ -1,0 +1,11 @@
+
+.come{
+    width: 38%;
+    background: #414568;
+    box-shadow: -4px -4px 8px rgb(255 255 255 / 10%), 4px 4px 8px 4px rgb(0 0 0 / 25%);
+    border-radius: 16px;
+    padding: 2%;
+    margin-top: 8%;
+    margin-left: 5%;
+    padding-top: 1%;
+}

@@ -1,0 +1,50 @@
+
+.Balance{
+    margin: auto;
+    margin-top: 10%;
+}
+.BalanceTitle{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+.BalanceTitle span:first-child{
+width: 10%;
+line-height: 16px;
+}
+.BalanceTitle span:last-child{
+    width: 90%;
+    text-align: right;
+    color: #888888;
+    }
+.progressBalance {
+    background: #282A40;
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 7vw;
+    width: 85%;
+    margin: auto;
+    margin-top: 3%;
+  }
+  
+.progressValueBalance {
+    animation: load 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #FA773F;
+    height: 5vw;
+    width: 0;
+}
+  
+.dataCome{
+    display: flex;
+}
+
+@keyframes load {
+    0% { width: 0; }
+    100% { width: 68%; }
+}

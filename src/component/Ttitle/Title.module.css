@@ -1,0 +1,24 @@
+.titleChart{
+    display: flex;
+}
+.boardChart{
+    width: 50%;
+    text-align: left
+}
+
+.boardChart .price{
+    color: #888888!important;
+    margin: 10% 0% 0 10%;
+    font-size: 12px;
+    line-height: 14px;  
+}
+.boardChart .price span:last-child{
+  color: green!important;  
+}
+.boardChart .name{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #CCCCCC;
+    margin: 15% 0 0 10%;
+}
