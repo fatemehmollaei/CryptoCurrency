@@ -9,16 +9,20 @@ import Balance from '../../component/balance/Balance.'
 class CurrencyBuilder extends Component {
     
     componentWillMount(){
-          // this.props.getCurrency()
+         const id = this.props.match.params.id
+         this.props.getCurrency(id)
      }
 
     render() {
+
+         let boxChart =  null
+
+        if(this.props.currency && this.props.currencyDay && this.props.currencyMonth && this.props.currencyYear)
+            boxChart =<> <BoxChart currency={this.props.currency} currencyDay={this.props.currencyDay}  currencyMonth={this.props.currencyMonth} currencyYear={this.props.currencyYear} /> <Balance />  </> 
+
         return (
             <Wrapper>
-                  {/* { this.props.assets ? <BoxChart assets={this.props.assets} /> :null} */}
-
-                  <BoxChart />
-                   <Balance />
+                   {boxChart}
                    
             </Wrapper>
         )
@@ -28,16 +32,20 @@ class CurrencyBuilder extends Component {
 const mapStateToProps = state => {
 
     return {
-        assets : state.Assets.assets
+        currency : state.Currency.currency,
+        currencyDay : state.Currency.currencyDay,
+        currencyMonth : state.Currency.currencyMonth,
+        currencyYear : state.Currency.currencyYear,
     };
 }
 
 const mapDispatchToProps = dispatch => {
     return {
-        getCurrency: () => {
-            dispatch(CurrencyActions.currencyDay())
-            dispatch(CurrencyActions.currencyMonth())
-            dispatch(CurrencyActions.currencyYear())
+        getCurrency: (id) => {
+            dispatch(CurrencyActions.currency(id))
+            dispatch(CurrencyActions.currencyDay(id))
+            dispatch(CurrencyActions.currencyMonth(id))
+            dispatch(CurrencyActions.currencyYear(id))
         },
     }
 }
