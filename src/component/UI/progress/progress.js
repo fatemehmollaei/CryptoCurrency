@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
-import classes from './progress.module.css'
+//import classes from './progress.module.css'
 
 const Progress = (props) => {
   // initialization of ref with value only happens first time

@@ -5,18 +5,18 @@
     width: 100%;
 }
 .NavigationItem a{
-    color: #8f5c2c;
+    /* color: #8f5c2c; */
     text-decoration: none;
     width: 100%;
     box-sizing: border-box;
     display: block;
 }
 
-.NavigationItem a:hover,
+/* .NavigationItem a:hover,
 .NavigationItem a:active,
 .NavigationItem a.active{
     color: #40A4c8;
-}
+} */
 
 @media(min-width: 550px){
     .NavigationItem{
@@ -40,7 +40,7 @@
     .NavigationItem a:hover,
     .NavigationItem a:active,
     .NavigationItem a.active{
-        border-bottom: 4px solid #f00;
+        /* border-bottom: 4px solid #f00; */
         color: #fff;
     }
 }

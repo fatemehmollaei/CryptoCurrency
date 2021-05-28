@@ -2,7 +2,7 @@ import classes from './Title.module.css';
 import React from 'react';
 import Icon from '../UI/Icon/Icon'
 
-import Progress from  '../UI/progress/progress'
+//import Progress from  '../UI/progress/progress'
 
 const Title = (props) => {
     return (
@@ -11,7 +11,7 @@ const Title = (props) => {
               <div className={classes.boardChart}>
                   <p className={classes.name}> {props.name}</p>
                   <p className={classes.price}> 
-                    <span>{props.price}</span>
+                    <span>{props.price+"$"}</span>
                       {props.percent ?<span> (+{props.percent}%)</span> :null}  
                   </p>
               </div>
